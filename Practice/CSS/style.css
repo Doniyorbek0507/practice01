@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-container {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    /* position: relative; */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 40vh 60vh;
+}
+.grid-container .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: #f00;
+}
+.grid-container .header h1.text {
+    text-align: center;
+    color: white;
+    font-family: serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+.grid-container .section {
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+    grid-template-rows: auto;
+    position: relative;
+}
+.grid-container .section .asidebar {
+    padding: 20px 30px 35px 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10% 60% 30%;
+    background: rgb(0, 0, 170);
+}
+.grid-container .section .asidebar div.text {
+    color: white;
+    
+}
+.grid-container .section .asidebar .text1 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: serif;
+}
+.grid-container .section .asidebar .text2 {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: serif;
+}
+.grid-container .section .sectionbar {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    position: relative;
+}
+.grid-container .section .sectionbar .grid-item-imgs {
+    border: 0.4px solid azure;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80% 20%;
+}
+/* .section .sectionbar .grid-item-imgs div {
+    border: 2px solid red;
+} */
+.section .sectionbar .grid-item-imgs .imgBlock {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sectionbar .grid-item-imgs .imgBlock img {
+    zoom: 0.5;
+}
+.grid-item-imgs .imgBlock img:nth-child(4){
+    zoom: 0.2;
+}
+.section .sectionbar .grid-item-imgs .contextBlock {
+    text-align: center;
+}
